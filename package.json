@@ -1,9 +1,10 @@
 {
-  "name": "@xqhero/test",
-  "version": "1.0.1",
+  "name": "@xqherotools/test",
+  "version": "1.0.0",
   "description": "npm package test",
   "main": "./dist/index.js",
-  "type": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "prepublish": "npm run build",
     "test": "mocha --reporter spec",
