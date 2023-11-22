@@ -1,0 +1,19 @@
+{
+  "name": "xqhero-test-pkg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "type": "./dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "test": "mocha --reporter spec",
+    "build": "tsc"
+  },
+  "author": "xqhero <18810255996@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "typescript": "^5.3.2"
+  }
+}
