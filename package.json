@@ -1,19 +1,33 @@
 {
-  "name": "xqhero-test-pkg",
+  "name": "@xqhero/test",
   "version": "1.0.0",
-  "description": "",
+  "description": "npm package test",
   "main": "./dist/index.js",
   "type": "./dist/index.d.ts",
   "scripts": {
     "prepublish": "npm run build",
     "test": "mocha --reporter spec",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "release-it"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xqhero/xqhero-test-pkg.git"
+  },
+  "homepage": "https://github.com/xqhero/xqhero-test-pkg/blob/main/README.md",
   "author": "xqhero <18810255996@163.com>",
   "license": "MIT",
+  "keywords": [
+    "test"
+  ],
   "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
     "chai": "^4.3.10",
     "mocha": "^10.2.0",
+    "release-it": "^17.0.0",
     "typescript": "^5.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
