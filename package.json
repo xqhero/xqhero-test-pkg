@@ -4,7 +4,6 @@
   "description": "npm package test",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "type": "module",
   "scripts": {
     "prepublish": "npm run build",
     "test": "mocha --reporter spec",
